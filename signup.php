@@ -9,6 +9,7 @@ if (!$con) {
 $message = "";
 $name = $email = $username = ""; // Default empty
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = mysqli_real_escape_string($con, $_POST['name']);
     $email = mysqli_real_escape_string($con, $_POST['email']);
@@ -147,4 +148,5 @@ function resetForm() {
         <?php endif; ?>
     </div>
 </body>
+
 </html>
